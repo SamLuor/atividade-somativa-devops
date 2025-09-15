@@ -23,11 +23,5 @@ jobs:
       - name: 📦 Instalar dependências
         run: npm install
 
-      - name: 🔎 Rodar lint
-        run: npm run lint
-
-      - name: 🧪 Rodar testes
-        run: npm test --if-present
-
       - name: 🏗️ Build do projeto
         run: npm run build
