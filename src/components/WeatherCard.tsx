@@ -1,10 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { 
-  Thermometer, 
-  Droplets, 
-  Wind, 
-  Eye, 
+import {
+  Droplets,
+  Wind,
   Gauge,
   Sunrise,
   Sunset,
@@ -12,9 +10,9 @@ import {
   CloudRain
 } from 'lucide-react';
 import { WeatherData } from '@/types/weather';
-import { 
-  formatTemperature, 
-  formatTime, 
+import {
+  formatTemperature,
+  formatTime,
   getWeatherCondition,
   getWindDirection,
   formatPressure,
@@ -70,7 +68,7 @@ export function WeatherCard({ data, locationName, country }: WeatherCardProps) {
               </div>
             </div>
           </div>
-          
+
           <div className="flex justify-between items-center">
             <Badge variant="secondary" className="bg-white/20 text-white">
               Mín: {formatTemperature(todayData.tempMin)}

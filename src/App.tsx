@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Cloud } from 'lucide-react';
 import { WeatherData } from '@/types/weather';
 import { 
