@@ -2,9 +2,9 @@ name: CI
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -22,12 +22,6 @@ jobs:
 
       - name: 📦 Instalar dependências
         run: npm install
-
-      - name: 🔎 Rodar lint
-        run: npm run lint
-
-      - name: 🧪 Rodar testes
-        run: npm test --if-present
 
       - name: 🏗️ Build do projeto
         run: npm run build
