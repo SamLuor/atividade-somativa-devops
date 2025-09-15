@@ -23,6 +23,7 @@ function App() {
 
   useEffect(() => {
     // Carregar dados iniciais para São Paulo
+    console.log("Só testando")
     handleSearch('São Paulo');
   }, []);
 
