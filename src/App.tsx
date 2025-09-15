@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Cloud } from 'lucide-react';
 import { WeatherData } from '@/types/weather';
 import { 
@@ -22,7 +22,6 @@ function App() {
   const { toast } = useToast();
 
   useEffect(() => {
-    // Carregar dados iniciais para São Paulo
     console.log("Só testando")
     handleSearch('São Paulo');
   }, []);
